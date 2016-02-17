@@ -20,6 +20,11 @@
   socket.on('connect', function(){
     loadWorld();
   });
+  
+  socket.on('createPlayer', function(data){
+    createPlayer();
+  });
+  
 </script>
   </body>
 </html>
